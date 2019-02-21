@@ -51,26 +51,29 @@ input[type="checkbox"] {
 	top: 2px;
 }
 
-#btnGenerate {
+#btnGenerate {	
 	outline: none;
     margin-bottom: 50px;
-    border: none;
+    font-family: 'Jura', sans-serif;
     width: 300px;
     height: 70px;
-    border-bottom: 4px solid #0000006e;
+    border: 2px solid #fff;
     border-radius: 4px;
     background-color: #057890;
 	color: #fff;
     font-size: 21px;
+	transition: all ease .1s;
 }
 
 #btnGenerate:hover {
-	background-color: #057890d1;
+	border: 2px solid #057890;
+	background-color: #fff;
+	color: #057890;
+	cursor: pointer;
 }
 
 #btnGenerate:active {  
-  border-bottom: none;
-  transform: translateY(2px);
+	font-size: 18px;
 }
 
 .out {
