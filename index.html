@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Password Generator</title>  
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Jura|Lobster" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<h1>Генератор паролей</h1>
+	  
+		<div class="length-block">
+			<p>Длина пароля: <span id="passLength">8</span></p>
+			<input id="lengthControl" type="range" min="8" max="30" step="1" value="10">
+		</div>
+		<div class="options">
+			<div class="checkboxes">
+				<div>
+					<input type="checkbox" id="lowercase" class="params" data-attr="low" checked>
+					<label for="lowercase">Строчные</label>
+				</div>	
+				<div>
+					<input type="checkbox" id="uppercase" class="params" data-attr="up" checked>
+					<label for="uppercase">Прописные</label>
+				</div>
+					
+				<div>
+					<input type="checkbox" id="numbers" class="params" data-attr="num" checked>
+					<label for="numbers">Числа</label>
+				</div>
+					
+				<div>
+					<input type="checkbox" id="symbols" class="params" data-attr="char">
+					<label for="symbols">Специальные символы</label>
+				</div>
+			</div>
+		  
+			<div class="chars-block">
+				<p data-attr="low" class="chars active">a-z</p>
+				<p data-attr="up" class="chars active">A-Z</p>
+				<p data-attr="num" class="chars active">0-9</p>
+				<p data-attr="char" class="chars">~ % * ! ^ & ? @ # $ ) (</p>
+			</div>
+		</div>
+	  
+		<button id="btnGenerate">Генерировать пароль</button>
+		
+		<div class="out-block">	  
+			
+		</div>
+	</div>
+  <script src="js/script.js"></script>
+</body>
+</html>

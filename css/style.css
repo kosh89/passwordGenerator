@@ -1,0 +1,79 @@
+body {	
+	font-family: 'Jura', sans-serif;
+}
+
+.container {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 {
+	font-size: 46px;	
+	margin: 50px;
+	font-family: 'Lobster', cursive;
+	color: #ca320e;;
+}
+
+input, label, p {
+	line-height: 30px;
+	margin: 0;
+}
+
+#lengthControl {
+	width: 60%;	
+}
+
+.options {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 40px auto;
+}
+
+.checkboxes, .chars-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+.chars-block {
+	color: #c5c5c5;
+}
+
+.active {
+	color: #000;
+}
+
+input[type="checkbox"] {
+	position: relative;
+	top: 2px;
+}
+
+#btnGenerate {
+	outline: none;
+    margin-bottom: 50px;
+    border: none;
+    width: 300px;
+    height: 70px;
+    border-bottom: 4px solid #0000006e;
+    border-radius: 4px;
+    background-color: #057890;
+	color: #fff;
+    font-size: 21px;
+}
+
+#btnGenerate:hover {
+	background-color: #057890d1;
+}
+
+#btnGenerate:active {  
+  border-bottom: none;
+  transform: translateY(2px);
+}
+
+.out {
+	font-size: 26px;
+	margin-bottom: 10px;
+}
